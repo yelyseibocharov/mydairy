@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 18px;
+    background: url(../img/schoolback.jpg) no-repeat center /cover;
+    
+}
+
+/*-----------------MAIN------------------*/
+.main {
+    height: 750px;
+    color: #6e7498;
+
+}
+.choicecont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+.textchoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(229, 229, 229, 0.9);
+    width: 350px;
+    height: 60px;
+}
+
+.textchoice h4 {
+    color:  #6e7498;
+    font-size: 20px;
+    margin: 0;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.circle {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(229, 229, 229, 0.9);
+    flex-direction: column;
+    margin: 0 40px;
+    transition: all 0.5s ease;
+}
+
+#graficadmin{
+    justify-content: center;
+}
+.circle p {
+    text-align: center; 
+    font-size: 22px;  
+}
+
+.circle img {
+    align-self: center;
+    width: 120px;
+}
+
+.circles a {
+    color: #6e7498;
+}
+.circle:hover {
+    background-color: #f3d67d;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #6e7498;
+}
+
+/*---------------------------------------*/
+    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .choicecont {
+        margin-top: 50px;
+    }
+    
+    .circles {
+        margin-top: 50px;
+    }
+    .circle {
+        width: 220px;
+        height: 220px;
+        margin: 0 15px;
+
+    }
+    .circle img {
+        width: 110px;
+    }
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .circles {
+        margin-top: 30px;
+    }
+    .circle {
+        width: 190px;
+        height: 190px;
+        margin: 0 15px;
+
+    }
+    .circle p {
+        margin: 17px 0;
+    }
+    .circle img {
+        width: 90px;
+    }
+  }
+
+
+  @media only screen and (max-width: 660px) {
+    .choicecont {
+        margin-top: 30px;
+    }
+    .textchoice {
+        width: 320px;
+    }
+    .circles {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    .circle {
+        margin: 13px 0;
+    }
+    .circle p {
+        margin: 15px 0;
+    }
+
+  }
+
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .textchoice {
+        width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .circle {
+        margin: 10px 0;
+    }
+   
+}

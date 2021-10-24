@@ -1,0 +1,195 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+a {
+    text-decoration: none;
+    color: #404040;
+}
+
+/*---------------------TAB-3-----------------*/
+
+.tabs-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+} 
+
+
+.tabs-triggers__item{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    color: white;
+}
+
+
+
+#third, #burger_third {
+    color: #f3d67d;
+}
+#tab-3_content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.firstline--3 {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.secondline--3 {
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+}
+.secondline--3 h3 {
+    color: #404040;
+}
+
+.add-class  {
+    width: 850px;
+}
+.button-add-class {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.button-add-class a {
+    display: flex;
+    border: 2px solid #404040;
+    color: #404040;
+    justify-content: flex-end;
+    margin: 0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 17.5px;
+
+}
+.button-add-class a:hover {
+    color: #f3d67d;
+}
+
+.class-back {
+    background-color: #404040;
+    border-radius: 5px;
+    width: 450px;
+    height: 110px;
+}
+
+.class-back form {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+}
+.select-class {
+    width: 120px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    font-size: 17.5px;
+    margin-left: 20px;
+}
+
+input[name="go-to-class"] {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    outline: none;
+    border: none;
+    border-radius: 3px 0 5px 0;
+    cursor: pointer;
+    height: 30px;
+    font-size: 17px; 
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
+input[name="go-to-class"]:hover {
+    color: #f3d67d;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+
+    .add-class{
+        width: 600px;
+    }
+    
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+    .add-class{
+        width: 550px;
+    }
+}
+ 
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 576px) {
+    .add-class{
+        width: 470px;
+    }
+    .class-back {
+        width: 400px;
+    }
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .tabs-content__item {
+        margin-top: 30px;
+    } 
+    .add-class{
+        width: 355px;
+    }
+    .class-back {
+        width: 330px;
+    }
+
+    }
+
+  @media only screen and (max-width: 360px) {
+    .add-class{
+        width: 275px;
+    }
+    .class-back {
+        width: 275px;
+        height: 120px;
+    }
+    
+    .button-add-class a {
+        padding: 5px 8px;
+    }
+
+}
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+
+  }

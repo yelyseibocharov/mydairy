@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+}
+
+.tabs-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+} 
+#burger_last {
+    color: #f3d67d;
+
+}
+
+
+/*--------------TAB-1------------------*/
+.cab-add{
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: green;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+
+.cab-add-error{
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+@keyframes hide {
+    0% { opacity: 1; }
+    25% { opacity: 1 }
+    50% { opacity: 1 }
+    27% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+.cabinets{
+    display: flex;
+    background-color: #404040;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    height: 530px;
+    margin-top: 40px;
+    border-radius: 7px;
+}
+.cabinets a {
+    color: white;
+}
+.cabinets a:hover {
+    color: #f3d67d;
+}
+.headtab h3 {
+    font-size: 21px;
+    text-align: center;
+}
+
+.button-add-cab  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 700px;
+}
+
+
+.cablist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+
+.cablist select {
+    position: relative;
+    width: 700px;
+    height: 320px;
+    overflow-x: scroll;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17.5px;
+    background-color: #eeeeee;  
+
+
+}
+
+
+.button-del {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    height: 30px;
+
+}
+
+
+.addcab {
+    background-color: rgb(64, 64, 64, 0.98);
+    width: 375px;
+    height: 265px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    display: none;
+    z-index: 11;
+}
+
+.addcab--active {
+    display: block;
+}
+
+
+
+.addcab h3 {
+    font-size: 21px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.add_cab_head {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_cab_head img {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.35s ease-in-out ;
+}
+.add_cab_head img:hover {
+    opacity: 0.85;
+}
+.button-addcab {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.button-del a {
+    margin: 0;
+}
+input[name="button-addcab"]{
+    color: white;
+    font-size: 19px;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+input[name="button-addcab"]:hover {
+    color: #f3d67d;
+}
+
+input[name="del-cab-button"]{
+    color: white;
+    font-size: 19px;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+
+}
+input[name="del-cab-button"]:hover {
+    color: #f3d67d;
+}
+
+.addcabcontent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+.cabnamber, .cabplaces, .cabname {
+    display: flex;  
+    align-items: center;
+}
+
+
+input[type="cabtext"], input[type="number"] {
+    width: 45px;
+    height: 30px;
+    margin: 10px 0 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17.5px;
+    background-color: #eeeeee;
+
+}
+input[name="cabname"] {
+    width: 190px;
+
+}
+
+
+.back {
+    display: flex;
+    width: 720px;
+}
+.back a{
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 30px;
+    margin: 0;
+}
+ 
+
+
+
+.delcab {
+    position: absolute;
+    background-color:rgb(64, 64, 64, 0.98);
+    border-radius: 3px;
+    padding: 30px 50px;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.delcab--active {
+    display: block;
+}
+
+.delcab h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    margin: 0;
+}
+
+
+
+  input:focus {
+    box-shadow: 0 0 5px #6e7498;
+    transition: 0.3s ease;
+}
+
+._error{
+    box-shadow: 0 0 7px red;
+}
+
+._succes{
+    box-shadow: 0 0 7px green;
+}
+
+
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .cabinets{
+        width: 700px;
+        height: 530px;
+    }
+    .button-add-cab {
+        width: 650px;
+    }
+    .button-del {
+        width: 650px;
+    }
+    .cablist select {
+        width: 650px;
+        height: 320px;
+    
+    }
+    .back {
+        width: 670px;
+    }
+    .addcab {
+        width: 350px;
+    }
+    
+    input[name="cabname"] {
+        width: 170px;
+    }
+
+}
+
+  
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .cabinets{
+        width: 550px;
+        height: 530px;
+    }
+    .button-add-cab {
+        width: 500px;
+    }
+    .button-del {
+        width: 500px;
+    }
+    .cablist select {
+        width: 500px;
+        height: 320px;
+    
+    }
+    .back {
+        width: 520px;
+    }
+    .addcab {
+        width: 300px;
+        height: 310px;
+
+    }
+    .addcabcontent {
+        padding:0;
+    }
+    .cabnamber, .cabplaces, .cabname {
+        flex-direction: column;
+    }
+    input[type="cabtext"], input[type="number"] {
+        margin: 5px 0 5px 5px;
+    }
+    input[name="button-addcab"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+ 
+
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+ 
+}
+@media only screen and (max-width: 575px) {
+    .cabinets{
+        width: 345px;
+        height: 530px;
+        margin-top: 20px;
+    }
+    .button-add-cab {
+        width: 320px;
+    }
+    .button-del {
+        width: 320px;
+    }
+    .cablist select {
+        width: 320px;
+        height: 320px;
+        font-size: 17.5px;
+    
+    }
+    .back {
+        width: 320px;
+        margin-top: 10px;
+    }
+    .addcab {
+        width: 300px;
+    }
+    input[name="button-addcab"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+    .back {
+        justify-content: center;
+    }
+    .back a{
+        padding: 5px 55px;
+    }
+
+     
+    
+}
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .cabinets{
+        width: 315px;
+        height: 530px;
+        margin-top: 20px;
+    }
+    .button-add-cab {
+        width: 290px;
+    }
+    .button-del {
+        width: 290px;
+    }
+    .cablist select {
+        width: 290px;
+        height: 320px;
+        font-size: 17.5px;
+    
+    }
+    .back {
+        width: 290px;
+        margin-top: 10px;
+    }
+    .addcab {
+        width: 270px;
+    }
+    input[name="button-addcab"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+    .back {
+        justify-content: center;
+    }
+    .back a{
+        padding: 5px 55px;
+    }
+
+}
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+
+}

@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+} 
+/*---------------------TAB-3-----------------*/
+
+.lesson-info {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+/*-----------------NameClass-------*/
+
+
+.class-name {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    color: #404040;
+    margin: 0;
+    font-size: 21px;
+}
+
+/*----------classteacher----*/
+.class-teacher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    width: 700px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.class-teacher h3 {
+  font-size: 21px;
+}
+
+
+input[id="go-to-teacher"] {
+    color: #404040;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    text-align: center;
+    white-space: pre-line;
+} 
+
+input[id="go-to-teacher"]:hover {
+    color: #f3d67d;
+} 
+
+/*------------------peopleinfo----------*/
+.people-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 850px;
+
+}
+
+
+.peopleinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    height: 100px;
+    background-color: #eeeeee;
+    margin: 15px 0;
+    border-radius: 5px;
+    color: #404040;
+    font-size: 17.5px;
+    position: relative;
+}
+
+.peoplecont {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+.graficphotopeople {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.info-about-people {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.numer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 100%;
+    margin: 0;
+    border-right: 2px solid white;
+    font-size: 21px;
+}
+
+
+.info-about-people h3 {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+
+
+
+input[id="go-to-stud"] {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 4px 0;
+    width: 170px;
+    height: 30px;
+    background-color: #d6d6d6;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+input[id="go-to-stud"]:hover {
+    color: #f3d67d;
+    background-color: #f6f6f6;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #6e7498;
+    transition: 0.3s ease;
+}
+
+._error{
+    box-shadow: 0 0 5px red;
+}
+
+._succes{
+    box-shadow: 0 0 5px green;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .lesson-info {
+        width: 700px;
+    }
+    .class-teacher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #404040;
+        width: 600px;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+    .people-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    .class-name {
+        width: 80px;
+    }
+
+    .peoplecont {
+        display: flex;
+        width: 605px;
+        height: 100px;
+        justify-content: space-between;
+    }
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+    .tabs-content__item {
+        align-items: center;
+    }
+    .lesson-info {
+        width: 650px;
+    }
+    .class-teacher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #404040;
+        width: 550px;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+    .class-teacher h3 {
+        font-size: 20px;
+    }
+    .people-panel {
+        width: 650px;
+    }
+    .info-about-people h3 {
+        font-size: 20px;
+    }
+    
+    .class-name {
+        width: 65px;
+        font-size: 20px;
+    }
+    
+    .numer {
+        font-size: 20px;
+    }
+    .peopleinfo {
+        width: 650px;
+    }
+    input[id="go-to-teacher"] {
+        font-size: 18px;
+    } 
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+    .lesson-info {
+        width: 550px;
+    }
+    .class-teacher {
+
+        flex-direction: column;
+        color: #404040;
+        width: 450px;
+        
+    }
+    .class-teacher h3 {
+        margin: 0 0 0 5px;
+    }
+    .people-panel {
+        width: 550px;
+    }
+    .peopleinfo {
+        width: 550px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .tabs-content__item {
+        margin-top: 20px;
+    }
+    .class-name {
+        width: 100px;
+        height: 40px;
+    }
+    .lesson-info {
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 110px;
+    }
+    .class-teacher {
+        height: 60px;
+        flex-direction: column;
+        color: #404040;
+        width: 350px;
+    }
+    .class-teacher h3 {
+        margin: 0;   
+    }
+    .people-panel {
+        width: 100%;    
+    }
+    .peopleinfo {
+        width: 350px;
+        height: 250px;
+
+    }
+    .info-about-people {
+        margin-top: 50px;
+        width: 200px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .info-about-people h3{
+        margin: 0;
+    }
+    .peoplecont {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+}
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .lesson-info {
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 120px;
+    }
+    .class-teacher {
+        flex-direction: column;
+        color: #404040;
+        height: 70px;
+        width: 300px;
+    }
+    .class-teacher h3 {
+        margin: 0;   
+    }
+    .people-panel {
+        width: 100%;    
+    }
+    .peopleinfo {
+        width: 300px;
+        height: 300px;
+        margin: 10px 0;
+
+    }
+    .info-about-people {
+        margin-top: 70px;
+    }
+  }
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+
+  }

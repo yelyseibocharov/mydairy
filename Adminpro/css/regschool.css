@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #f3d67d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353535;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
+.logo {
+    margin-left: 50px;
+}
+
+.logo a {
+    color: white;
+}
+
+
+
+
+/*------------MAIN-------------*/
+.admincontent {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-top: 70px;
+    height: 750px;
+}
+
+
+
+/*-------------1---------*/
+.tabs-content_item_1 {
+    display: flex;
+    background-color: #404040;
+    flex-direction: column;
+    width: 850px;
+    height: 700px;
+    display: block;
+
+}
+.tabs-content_item_1--hidden {
+    display: none;
+}
+
+.headtab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.headtabf h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.poloska {
+    width: 700px;
+    height: 35px;
+    background-color: white;
+}
+.activerect-1 {
+    width: 150px;
+	height: 0;
+	border-top: 35px solid #f3d67d; 
+	border-right: 35px solid transparent;	
+}
+
+.content-tab {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.leftcont {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.rightcont {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+input[type="text"] {
+    width: 290px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 0.9em;
+    background-color: #eeeeee;
+
+}
+
+select {
+    width: 290px;
+    height: 37px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 0.9em;
+    background-color: #eeeeee;
+}
+
+
+
+.next-1 {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 775px;
+}
+
+.next-1 text {
+    margin: 10px 0 0 100px;
+    border-bottom: 1px solid white;
+}
+
+
+input[type="submit"] {
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 130px;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: #404040;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #f3d67d;
+    color: #f3d67d;
+    transition: 0.3s;
+}
+/*-------------2-------------*/
+.tabs-content_item_2{
+    display: flex;
+    background-color: #404040;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 700px;
+    display: none;
+}
+.tabs-content_item_2--active {
+    display: block;
+}
+
+.activerect-2 {
+    width: 350px;
+	height: 0;
+	border-top: 35px solid #f3d67d; 
+	border-right: 35px solid transparent;	
+}
+
+
+.button-add-cab  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 700px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.button-add-cab a {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 14px;
+}
+
+
+
+.cablist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cablist select {
+    width: 700px;
+    height: 350px;
+}
+
+
+.button-del {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+
+}
+
+.next-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+    margin-top: 47px;
+}
+.next-2 h4 {
+    margin: 10px 0 0 100px;
+}
+
+
+.addcab {
+    background-color: #404040;
+    width: 400px;
+    height: 290px;
+    position: absolute;
+    left: 38%;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    border: 2px solid white;
+    display: none;
+}
+
+.addcab--active {
+    display: block;
+}
+
+.add_cab_head img {
+    width: 30px;
+}
+
+.addcab--active {
+    display: block;
+}
+
+.addcab h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.add_cab_head {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_cab_head img {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button-addcab {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.button-addcab a {
+    margin-right: 20px;
+}
+
+.addcabcontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 40px;
+}
+
+
+.cabnamber, .cabplaces, .cabname {
+    display: flex;  
+}
+
+
+input[type="cabtext"] {
+    width: 40px;
+    height: 35px;
+    margin: 10px 0 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 0.9em;
+    background-color: #eeeeee;
+
+}
+input[name="cabname"] {
+    width: 190px;
+}
+
+
+
+/*------------3-------------*/
+
+.tabs-content_item_3{
+    display: flex;
+    background-color: #404040;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    height: 700px;
+    display:none;
+}
+
+.tabs-content_item_3--active {
+    display: block;
+}
+
+
+.activerect-3 {
+    width: 550px;
+	height: 0;
+	border-top: 35px solid #f3d67d; 
+	border-right: 35px solid transparent;	
+}
+
+
+.button-add-subject  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 700px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.button-add-subject a {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 14px;
+}
+
+
+
+.subjectlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.subjectlist select {
+    width: 700px;
+    height: 350px;
+}
+
+
+.next-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+    margin-top: 47px;
+}
+
+.next-3 h4 {
+    margin: 10px 0 0 100px;
+}
+
+.addsubject {
+    background-color: #404040;
+    width: 350px;
+    height: 180px;
+    position: absolute;
+    left: 38%;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    display: none;
+}
+.addsubject--active {
+    display: block;
+}
+.addsubject h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+
+}
+.select-addsubject {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.add_subject_head {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_subject_head img {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.button-addsubj {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.button-addsubj a {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.addschool {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 50px;
+}

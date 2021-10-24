@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    background: url('../img/backgrmain.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    z-index: 4;
+}
+/*------------------MAIN--------------------*/
+
+.main {
+    display: flex;
+    height: 750px;
+}
+
+
+.backgroundline {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    background-color: rgba(234,234,234,0.9);
+    box-shadow: 1px 1px 5px rgb(43, 43, 43, 0.3);
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.textt {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.img {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+#strelkaleft, #strelkaright {
+    width: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#strelkaleft:hover, #strelkaright:hover {
+    transform: scale(1.05);
+
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #6e7498;
+    font-size: 22px;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+
+}
+
+.infostudent h4, .infoteacher h4{
+    text-align: center;
+}
+
+
+.infostudent {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.infostudent h4{
+    margin: 0 0 10px 0;
+}
+
+.graficstudent {
+    width: 230px;
+
+}
+
+
+.info-text {
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+.infoteacher {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.infoteacher h4 {
+    margin: 0 0 10px 0;
+}
+.graficteacher {
+    width: 500px;
+
+}
+
+.infomydairy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;    
+
+}
+
+.infograficlogo {
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+
+
+/*---------------------------------------*/
+
+    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .backgroundline {
+        height: 380px;
+    }
+    .graficteacher {
+        width: 390px;
+    }
+    .graficstudent {
+        width: 200px;
+    }
+    .infograficlogo {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    #strelkaleft, #strelkaright {
+        width: 60px;
+        margin: 0 10px;
+    }
+    .main {
+        height: 620px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .backgroundline {
+        height: 320px;
+    }
+    .graficstudent {
+        display: none;
+    }
+    .graficteacher{
+        display: none;
+    }
+    .infograficlogo {
+        width: 220px;
+    }
+    .info-text {
+        margin: 0 0 30px 0;
+    }
+    .main {
+        height: 550px;
+    }
+    #strelkaleft {
+        position: absolute;    
+        opacity: 0;
+        margin: 0;
+        height: 100%;
+    }
+    #stop-interval {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        height: 100%;
+
+    }
+    #strelkaright {
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        margin: 0;
+        height: 100%;
+    }
+    #strelkaleft:hover, #strelkaright:hover {
+        transform: none;
+    }
+    .wrapper-left, .wrapper-right {
+        position: absolute;
+        width: 40px;
+        height: 100%;
+
+    }
+    .wrapper-left {
+        left: 0;
+        transition: all 0.3s ease;
+        background: linear-gradient(to right, rgba(110, 116, 152, 0.2),rgba(234,234,234,0.1));
+    }
+    .wrapper-right {
+        right: 0;
+        transition: all 0.3s ease;
+        background: linear-gradient(to left, rgb(110, 116, 152, 0.2),rgba(234,234,234,0.1));
+    }
+    .wrapper-right:hover {
+        background: linear-gradient(to left, rgb(110, 116, 152, 0.8),rgba(234,234,234,0.1));
+    }
+    .wrapper-left:hover {
+        background: linear-gradient(to right, rgb(110, 116, 152, 0.8),rgba(234,234,234,0.1));
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+
+  }
+
+  @media only screen and (max-width: 575px) {
+    .backgroundline {
+        height: 300px;
+    }
+  }
+
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .infograficlogo {
+        width: 200px;
+    }
+    .slider {
+        font-size: 20px;
+        padding: 0 3px;
+    }
+  }

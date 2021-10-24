@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+.tabs-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.tabs-content a {
+    margin-top: 7px 
+}
+
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+} 
+
+
+#first, #burger_first {
+    color: #f3d67d;
+
+}
+
+
+
+/*--------------TAB-1------------------*/
+.firstcolumn--1 {
+    margin-right: 50px;
+}
+.firstcolumn--1 span,.secondcolumn--1 span{
+    margin-top: 7px;
+}
+
+.tabs-content__item a:hover {
+    color:#f3d67d;
+}
+
+.tabs-content__item a{
+    color: white;
+}
+/*------------people--------------*/
+
+
+.peoplecontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    width: 250px;
+    height: 150px;
+    background-color: #353535;
+    border-radius: 5px;
+}
+
+
+
+.people h4 {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: #353535;
+    margin-bottom: 5px;
+}
+/*-----------class----------*/
+.classcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    width: 300px;
+    height: 100px;
+    background-color: #353535;
+    border-radius: 5px;
+}
+
+
+
+.class h4 {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: #353535;
+    margin-bottom: 5px;
+}
+
+/*--------------Directories----------*/
+.directories {
+    margin-top: 20px;
+}
+.dircontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    width: 250px;
+    height: 150px;
+    background-color: #353535;
+    border-radius: 5px;
+}
+
+.directories h4 {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: #353535;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .firstcolumn--1 {
+        margin-right: 20px;
+    }
+    body { 
+        font-size: 18px;
+    }
+    /*------------people--------------*/
+    .peoplecontent {
+        width: 220px;
+        height: 120px;
+    }
+    .people h4 {
+        font-size: 18px;
+    }
+    /*-----------class----------*/
+    .classcontent {
+        width: 280px;
+        height: 80px;
+    }
+    .class h4 {
+        font-size: 18px;
+    }
+
+    /*--------------Directories----------*/
+    .directories {
+        margin-top: 20px;
+    }
+    .dircontent {
+        width: 220px;
+        height: 120px;
+    }
+
+    .directories h4 {
+        font-size: 18px;
+    }
+
+
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+    .classcontent {
+        width: 250px;
+    }
+
+}
+@media only screen and (max-width: 575px) {
+
+    .tabs-content__item {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .firstcolumn--1 {
+        margin-right: 0;
+    }
+    /*------------people--------------*/
+    .peoplecontent {
+        width: 280px;
+    }
+    /*-----------class----------*/
+    .class {
+        margin-top: 20px;
+    }
+    .classcontent {
+        width: 280px;
+    }
+    /*--------------Directories----------*/
+    .directories {
+        margin-top: 20px;
+    }
+    .dircontent {
+        width: 280px;
+        height: 130px;
+    }
+    
+  }
+ 
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    /*------------people--------------*/
+    .peoplecontent {
+        width: 250px;
+    }
+    /*-----------class----------*/
+    .classcontent {
+        width: 250px;
+    }
+    /*--------------Directories----------*/
+    .dircontent {
+        width: 250px;
+    }
+  }
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+    /*------------people--------------*/
+    .peoplecontent {
+        width: 220px;
+    }
+    /*-----------class----------*/
+    .classcontent {
+        width: 220px;
+    }
+    /*--------------Directories----------*/
+    .dircontent {
+        width: 220px;
+    }
+  }

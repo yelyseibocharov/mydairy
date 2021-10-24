@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+}
+
+.tabs-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+} 
+
+#burger_fifth {
+    color: #f3d67d;
+
+}
+
+
+/*--------------TAB-1------------------*/
+
+.subjects{
+    display: flex;
+    background-color: #404040;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    height: 510px;
+    margin-top: 40px;
+    border-radius: 7px;
+    position: relative;
+
+}
+.subjects a {
+    color: white;
+}
+.subjects a:hover {
+    color: #f3d67d;
+}
+
+.headtab h3 {
+    text-align: center;
+    font-size: 21px;
+}
+
+
+.subjectlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.subjectlist select {
+    width: 700px;
+    height: 320px;
+    overflow-x: scroll;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17.5px;
+    background-color: #eeeeee;
+}
+
+
+.back {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin-top: 30px;
+}
+
+
+.back a{
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 30px;
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    margin: 0;
+    
+}
+
+
+
+  input:focus {
+    box-shadow: 0 0 5px #6e7498;
+    transition: 0.3s ease;
+}
+
+._error{
+    box-shadow: 0 0 7px red;
+}
+
+._succes{
+    box-shadow: 0 0 7px green;
+}
+.delcab {
+    top: 35%;
+    left: 25%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .subjects{
+        width: 700px;
+    }
+    .button-add-subject {
+        width: 650px;
+    }
+    .button-del {
+        width: 650px;
+    }
+    .subjectlist select {
+        width: 650px;
+        height: 320px;
+    
+    }
+    .back {
+        width: 670px;
+    }
+
+}
+
+  
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .subjects{
+        width: 550px;
+        
+    }
+    .button-add-subject {
+        width: 500px;
+    }
+    .button-del {
+        width: 500px;
+    }
+    .subjectlist select {
+        width: 500px;
+        height: 320px;
+    
+    }
+    .back {
+        width: 520px;
+    }
+    .addsubject {
+        width: 300px;
+        left: 22%;
+    }
+    .addsujectcontent {
+        padding:0;
+    }
+
+    input[name="button-addsubj"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+    .delcab {
+        top: 35%;
+        left: 25%;
+    }
+
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+ 
+}
+@media only screen and (max-width: 575px) {
+    .subjects{
+        width: 345px;
+        margin-top: 20px;
+        height: 480px;
+    }
+    .button-add-subject {
+        width: 320px;
+    }
+    .button-del {
+        width: 320px;
+    }
+    .subjectlist select {
+        width: 320px;
+        height: 320px;
+        font-size: 17.5px;
+    
+    }
+    .back {
+        width: 320px;
+        margin-top: 10px;
+    }
+    .addsubject {
+        left: 23px;
+    }
+    input[name="button-addsubj"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+    .back {
+        justify-content: center;
+    }
+    .back a{
+        padding: 5px 55px;
+    }
+    .delcab {
+        top: 35%;
+        left: 10%;
+    }
+     
+    
+}
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .subjects{
+        width: 315px;
+        margin-top: 20px;
+    }
+    .button-add-subject {
+        width: 290px;
+    }
+    .button-del {
+        width: 290px;
+    }
+    .subjectlist select {
+        width: 290px;
+        height: 320px;
+        font-size: 17.5px;
+    
+    }
+    .back {
+        width: 290px;
+        margin-top: 10px;
+    }
+    .addsubject {
+        width: 270px;
+        left: 23px;
+    }
+    input[name="button-"]{
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+    .back {
+        justify-content: center;
+    }
+    .back a{
+        padding: 5px 55px;
+    }
+    .delcab {
+        top: 35%;
+        left: 6%;
+    }
+     
+}
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+
+}

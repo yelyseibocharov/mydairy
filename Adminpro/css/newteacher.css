@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+}
+.tabs-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    margin-top: 40px;
+} 
+
+
+
+/*-----Teacher----*/
+
+
+
+.add_teacher_window {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: 440px;
+    background-color: #404040;
+    margin-top: 40px;
+    border-radius: 7px;
+
+}
+
+.top-button_close a {
+    margin: 0;
+    width: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+} 
+
+.top-button_close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-button_close img {
+    width: 30px;
+    cursor: pointer;
+    transition: 0.35s ease-in-out ;
+}
+.top-button_close img:hover {
+    opacity: 0.85;
+}
+.add_teacher_window h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.teacher-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+.teacher-info-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper-column {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.left-column_teacher, 
+.center-column_teacher, 
+.right-column_teacher {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 220px;
+}
+.wrapper-input {
+    width: 214px;
+    margin: 5px 0;
+}
+.bottom-button_teacher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+input[name="add"] {
+    margin-right: 40px; 
+    border-radius: 3px;
+    background: none;
+    border: 2px solid white;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+}
+
+
+input[name="add"]:hover {
+    color: #f3d67d;
+} 
+
+
+input[type="text"], input[type="tel"], input[type="date"] {
+    width: 220px;
+    height: 35px;
+    border-radius: 3px ;
+    outline: none;
+    border: none;
+    font-size: 17.5px;
+    background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 3px;
+}
+input[type="date"] {
+    width: 223px;
+    height: 37px;
+    cursor: pointer;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+.select-osvita {
+    width: 224px;
+    height: 37px;
+    border-radius: 3px ;
+    outline: none;
+    border: none;
+    font-size: 17.5px;
+    background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #6e7498;
+    transition: 0.3s ease;
+}
+
+._error{
+    box-shadow: 0 0 7px red;
+}
+
+._succes{
+    box-shadow: 0 0 7px green;
+}
+.people-add{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: green;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+
+.people-add-error{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: red;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+@keyframes hide {
+    0% { opacity: 1; }
+    25% { opacity: 1 }
+    50% { opacity: 1 }
+    27% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+  @media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .add_teacher_window {
+        width: 750px;
+        height: 400px;
+    }
+    .add_teacher_window h3 {
+        margin-bottom: 20px;
+    }
+    .left-column_teacher, .center-column_teacher, .right-column_teacher {
+        margin: 0 10px;
+    }
+    input[type="tel"], input[type="text"] {
+        width: 210px;
+
+    }
+    input[type="date"] {
+        width: 213px;
+    }
+
+    .select-osvita {
+        width: 214px;
+    }
+    
+    .form label {
+        font-size: 17.5px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .add_teacher_window {
+      width: 450px;
+      height: 780px;
+  }
+  .top-button_close a {
+      margin: 15px 15px 0 0;
+  }
+  .wrapper-column {
+      flex-direction: column;
+      align-items: center;
+  }
+  .bottom-button_teacher {
+      flex-direction: column;
+      margin-top: 15px;
+  }
+  input[type="tel"], input[type="text"] {
+      height: 33px;
+
+  }
+  input[type="date"] {
+      height: 35px;
+  }
+
+  .select-osvita {
+      height: 35px;
+  }
+  input[name="add"] {
+      margin: 20px 0 0 0;
+      padding: 5px 65px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 660px) {
+  
+}
+
+@media only screen and (max-width: 575px) {
+
+  
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 480px) {
+  .add_teacher_window {
+      width: 310px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 280px) {
+
+}

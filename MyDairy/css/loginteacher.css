@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    background: url('../img/loginbackteacher.jpg') no-repeat center /cover;
+}
+
+header {
+    position: relative;
+    z-index: 4;
+}
+
+
+/*-----------------MAIN------------------*/
+.main {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    z-index: 5;
+} 
+
+.loginbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    height: 340px;
+    background: rgba(110, 116, 152, 0.9);
+    margin-top: 100px;
+    border-radius: 7px;
+    position: relative;
+
+}
+
+.logincont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.logincont h4 {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+
+input[type="submit"] {
+    width: 95px;
+    height: 35px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    outline: none;
+    color: #6e7498;
+    border: none;
+    transition: all 0.4s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f3d67d;
+
+}
+
+
+.loginbottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.loginbottom a {
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+.loginbottom a:hover {
+    color: #f3d67d;
+}
+
+/*---------------------------------------*/
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .loginbg {
+        width: 540px;
+        height: 320px;
+    }
+  }
+
+
+  @media only screen and (max-width: 660px) {
+    .loginbg {
+        width: 400px;
+        height: 380px;
+        margin-top: 80px;
+    }
+  }
+
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .loginbg {
+        width: 365px;
+        height: 370px;
+        margin-top: 60px;
+    }
+    input[type="text"], input[type="password"] {
+        width: 270px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+   .loginbg {
+        width: 310px;
+        height: 350px;
+        margin-top: 60px;
+    }
+    input[type="text"], input[type="password"] {
+        width: 250px;
+    }
+}

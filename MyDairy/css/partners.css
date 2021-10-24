@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+/*------------------MAIN--------------------*/
+
+.main {
+    height: 750px;
+}
+
+.continfo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #6e7498;
+    margin-top: 50px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(238, 238, 238, 0.9);
+}
+
+.heading h4 {
+    color: #6e7498;
+    font-size: 20px;
+    margin: 0;
+}
+
+.partners-cont {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    width: 710px;
+    height: 250px;
+    border-top: 2px solid #c8c8c8;
+    border-bottom: 2px solid #c8c8c8;
+
+}
+.infofpartner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infofpartner h4 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.partners a {
+    color: #6e7498;
+}
+
+.graficcollege {
+    width: 200px;
+    transition: all 0.3s;
+}
+.graficcollege:hover {
+    transform: scale(1.05);
+
+}
+
+/*---------------------------------------*/
+
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .partners-cont {
+        width: 650px;
+        height: 230px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .partners {
+        margin-top: 40px;
+    }
+
+    .partners-cont {
+        width: 600px;
+        height: 210px;
+    }
+    .graficcollege{
+        width: 180px;
+    }
+  }
+
+
+  @media only screen and (max-width: 660px) {
+    .partners {
+        margin-top: 30px;
+    }
+    .partners-cont {
+        padding: 20px 0;
+        width: 450px;
+        height: 270px;
+        flex-direction: column;
+    }
+    .graficcollege{
+        width: 160px;
+    }
+    .infofpartner h4 {
+        margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .partners-cont {
+        width: 400px;
+    }
+    .infofpartner h4 {
+        margin: 10px 0;
+    }
+  }
+
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .partners-cont {
+        width: 350px;
+    }
+    .infofpartner h4 {
+        margin: 10px 0;
+    } 
+    .graficcollege{
+        width: 150px;
+    } 
+  }
+
+  @media only screen and (max-width: 375px) {
+    .partners-cont {
+        width: 310px;
+    }
+   
+}

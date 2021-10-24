@@ -1,0 +1,726 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+/*-----------HEADER---------------*/
+a {
+    text-decoration: none;
+}
+
+a { 
+    color: white;
+}
+
+/*------------MAIN-------------*/
+.tabs-content__item {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 40px;
+} 
+/*---------------TAB-2------------------*/
+.people-add{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: green;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+
+.people-add-error{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: red;
+    animation: hide 4s ease-in-out 0s 1;
+    opacity:0;
+    background-color: rgb(255, 255, 255, 0.95);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+@keyframes hide {
+    0% { opacity: 1; }
+    25% { opacity: 1 }
+    50% { opacity: 1 }
+    27% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+.peopleinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #404040;
+
+}
+
+.first-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 40px;
+}
+.photopeople {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 200px;
+
+}
+.input_item {
+    position: relative;
+}
+.input_item:hover {
+    color: #f3d67d;
+}
+
+.input_file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.peopleinforight{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    margin-left: 20px;
+    position: relative;
+}
+.peopleinforight--hidden {
+    display: none;
+}
+
+.graficstudent {
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+}
+.people-info-firstline {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.edit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.graficedit {
+    width: 35px;
+    height: 35px;
+    background-color: #404040;
+    border-radius: 5px;
+    padding: 1px;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 8;
+    transition: 0.35s ease-in-out ;
+}
+
+.graficedit:hover {
+    opacity: 0.85;
+}
+
+.people-info-firstline h3 {
+    margin: 0;
+    width: 160px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #404040;
+    text-align: center;
+    font-size: 19px;
+}
+
+.surname, .name, .patronymic, .osvita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.patronymic {
+    margin-right: 0;
+}
+.bday, .phonenumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.definition {
+    font-size: 16.5px;
+}
+
+.people-info-secondline{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.people-info-secondline h4 {
+    margin: 0;
+    width: 160px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #404040;
+    text-align: center;
+}
+.osvita h4 {
+    width: 200px;
+}
+
+/*-------------*/
+
+.secondline {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.secondline--hidden {
+    display: none;
+}
+
+.people-info-thirdline {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+}
+
+
+.address, .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.address {
+    margin-right: 30px;
+}
+
+
+
+.people-info-thirdline h4 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #404040;
+    text-align: center;
+}
+.address h4 {
+    width: 200px;
+}
+.email h4 {
+    width: 240px;
+}
+
+.password a {
+    color: #404040;
+}
+
+
+.password a:hover {
+    color: #f3d67d;
+}
+
+
+
+
+
+/*--------------Edit------------*/
+.edit-info {
+    display: none;
+}
+
+.edit-peopleinforight{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+
+}
+.edit-info--active {
+    display: block;
+}
+
+.edit-peopleinfofirstline {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 160px;
+    height: 35px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: #eeeeee;
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+input[type="date"] {
+    cursor: pointer;
+    width: 162px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+input[name="phonenumber"]{
+    margin-left: 10px;
+    padding-left: 5px;
+}
+input[name="email"] {
+    width: 230px;
+    padding-left: 5px;
+}
+.select-osvita {
+    width: 200px;
+    height: 35px;
+    border-radius: 3px ;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: #eeeeee;
+    margin: 0;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.edit-secondline {
+    margin-top: 40px;
+}
+
+.adrmail {
+    display: flex;
+    margin-left: 50px;
+}
+
+
+.edit-people-info-thirdline {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-save, .button-back {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 40px;
+}
+
+.button-save input {
+    color: white;
+    background-color: #404040;
+    border-radius: 3px;
+    padding: 7px 14px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+}
+.button-save input:hover {
+    color: #f3d67d;
+}
+.button-back a {
+    color: #404040;
+    border: 2px solid #404040;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.button-save a:hover, .button-back a:hover {
+    color: #f3d67d;
+}
+.button-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #6e7498;
+    transition: 0.3s ease;
+}
+
+._error{
+    box-shadow: 0 0 5px red;
+}
+
+._succes{
+    box-shadow: 0 0 5px green;
+}
+
+/*------editpass-------*/
+
+
+.edit-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(64, 64, 64, 0.98);
+    width: 520px;
+    height: 280px;
+    position: absolute;
+    margin-top: 50px;
+    border-radius: 2px;
+    display: none;
+} 
+#pass {
+    text-align: center;
+}
+.edit-pass--active {
+    display: block;
+}
+.edit-pass h3 {
+    color: white;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.close-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+
+}
+
+.close-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.oldpass, .newpass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+input[type="pass"] {
+    width: 250px;
+    height: 35px;
+    border-radius: 3px ;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: #eeeeee;
+    margin: 0;
+    margin-top: 20px;
+    z-index: 11;
+}
+
+.pass-save {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+
+input[name="passwordok"] {
+    border: 2px solid white;
+    padding: 4px 14px;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 19px;
+    outline: none;
+}
+
+input[name="passwordok"]:hover {
+    color: #f3d67d;}
+
+
+    
+@media only screen and (max-width: 1200px) {
+   
+}    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .edit-info {
+        margin-left: 10px;
+    }
+
+    .peopleinforight {
+        width: 550px;
+        margin-left: 10px;
+    }
+    .people-info-firstline {
+        margin: 40px 0 0 0;
+    }
+    .people-info-secondline {
+        margin: 40px 0 0 0;
+    }
+    .graficstudent {
+        width: 135px;
+    }
+    .surname, .name, .patronymic, .osvita {
+        margin-right: 15px;
+        width: 150px;
+    }
+    .patronymic {
+        margin-right: 0;
+    }
+    .bday, .phonenumber {
+        margin-right: 10px;
+    }
+    
+    .people-info-firstline h3 {
+        font-size: 18px;
+        width: 150px;
+    }
+    .people-info-secondline h4 {
+        width: 140px;
+        font-size: 15.5px;
+    }
+    .osvita {
+        width: 175px;
+    }
+    .osvita h4 {
+        font-size: 15.5px;
+        width: 175px;
+    }
+    .address h4 {
+        font-size: 15.5px;
+        width: 180px;
+    }
+    .email h4 {
+        font-size: 15.5px;
+        width: 220px;
+    }
+    
+    
+
+    .edit-peopleinforight {
+        width: 550px;
+
+    }
+    .edit-peopleinfofirstline {
+        margin: 40px 0 0 0;
+    }
+    .edit-peopleinfosecondline {
+        margin: 40px 0 0 0;
+    }
+    
+    .adrmail {
+        margin-left: 0;
+    }
+    .address {
+        margin-right: 15px;
+    }
+    
+    input[type="text"], input[type="date"] {
+        width: 150px;
+        height: 35px;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        background-color: #eeeeee;
+        margin: 0;
+    }
+    input[type="date"] {
+        width: 152px;
+    }
+    input[name="email"] {
+        width: 230px;
+    }
+    .select-osvita {
+        width: 180px;
+        height: 35px;
+
+    }
+
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .peopleinfo {
+        width: 630px;
+    }
+    .edit-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .first-line {
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+        border: none;
+        padding-bottom: 0;
+    }
+    .photopeople {
+        align-self: center;
+    }    
+
+    .people-info-firstline {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .graficstudent {
+        width: 150px;
+    }
+    .peopleinforight {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .edit-peopleinforight {
+        width: 100%;
+    }
+    .edit-peopleinfofirstline {
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .people-info-secondline {
+        justify-content: space-around;
+    }
+    .surname, .name, .patronymic, .osvita {
+        margin-right: 0;
+    }
+    .button-save {
+        margin-left: 25px;
+    }
+    .bday, .phonenumber {
+        margin-right: 0;
+    }
+    .people-info-thirdline {
+        width: 100%;
+    }
+    .adrmail {
+        justify-content: center;
+        }
+
+}
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 660px) {
+    .peopleinfo {
+        width: 565px;
+    }
+    .peopleinforight {
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    
+    .peopleinfo {
+        width: 100%;
+    }
+    .peopleinforight {
+        height: 100%;
+        width: 480px;
+    }
+    .people-info-firstline {
+        flex-direction: column;
+        align-items: center;
+    }
+    .people-info-secondline {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .secondline {
+        margin-top: 20px;
+    }
+    .people-info-thirdline {
+        flex-direction: column;
+        align-items: center;
+    }
+    .edit-peopleinfofirstline {
+        flex-direction: column;
+        align-items: center;
+    }
+    .adrmail {
+        flex-direction: column;
+    }
+    .surname, .name, .patronymic, .osvita {
+        margin: 7px 0;
+    }
+    .bday, .phonenumber {
+        margin: 7px 0;
+    }
+    .address, .email {
+        margin: 7px 0;
+    }
+    .password {
+        margin: 10px 0;
+    }
+    .button-bottom {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-save, .button-back {
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+    }    
+    .button-back a {
+        padding: 5px 36px;
+    }
+    .button-save input {
+        padding: 7px 54px;
+    }
+    input[type="text"] {
+        width: 182px;
+    }
+    input[type="date"] {
+        width: 184px;
+    }
+
+    .select-osvita {
+        width: 189px;
+    }
+    
+}
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .peopleinforight {
+        width: 315px;
+    }
+    .edit-pass {
+        width: 320px;
+        height: 270px;
+    } 
+    
+    input[type="pass"] {
+        width: 200px;
+        height: 35px;
+    }
+  }
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 280px) {
+
+  }

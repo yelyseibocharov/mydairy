@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/*-----------------MAIN------------------*/
+main {
+    height: 750px;
+}
+.founders {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #6e7498;
+    margin-top: 50px;
+
+}
+
+.founders h4 {
+    color: #6e7498;
+    font-size: 20px;
+    margin-top: 0;
+
+}
+
+
+.founder {
+    display: flex;
+    align-items: center;
+    width: 710px;
+    height: 250px;
+    border-top: 2px solid #c8c8c8;
+}
+
+#second-founder {
+    border-bottom: 2px solid #c8c8c8;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    margin-left: 10px;
+
+}
+.founders img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+/*---------------------------------------*/
+    
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .founder {
+        width: 650px;
+        height: 230px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .founders {
+        margin-top: 40px;
+    }
+    .founders img{
+        width: 180px;
+    }
+    .founder {
+        width: 600px;
+        height: 210px;
+    }
+  }
+
+
+  @media only screen and (max-width: 660px) {
+    .founders {
+        margin-top: 30px;
+    }
+    .founder {
+        padding: 20px 0;
+        width: 450px;
+        height: 250px;
+        flex-direction: column;
+    }
+    .founders img{
+        width: 160px;
+    }
+    .founders h4 {
+        margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .founder {
+        width: 400px;
+    }
+    .founders h4 {
+        margin: 10px 0;
+    }
+  }
+
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 480px) {
+    .founder {
+        width: 350px;
+    }
+    .founders h4 {
+        font-size: 21px;
+        margin: 10px 0;
+    } 
+    .founders img{
+        width: 150px;
+    } 
+  }
+
+  @media only screen and (max-width: 375px) {
+    .founder {
+        width: 310px;
+    }
+   
+}
